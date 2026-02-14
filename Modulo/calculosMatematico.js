@@ -1,23 +1,22 @@
-    function calcularOperacaoMatematicaSoma(primeiroNumero, segundoNumero) {
-        return Number(primeiroNumero) + Number(segundoNumero)
-    }
+function calculaSoma(primeiroNumero, segundoNumero) {
+    return Number(primeiroNumero) + Number(segundoNumero)
+}
 
-    function calcularOperacaoMatematicaSubtracao(primeiroNumero, segundoNumero) {
-        return Number(primeiroNumero) - Number(segundoNumero)
-    }
+function calcularSubtracao(primeiroNumero, segundoNumero) {
+    return Number(primeiroNumero) - Number(segundoNumero)
+}
 
-    function calcularOperacaoMatematicaMultiplicacao(primeiroNumero, segundoNumero) {
-        return Number(primeiroNumero) * Number(segundoNumero)
-    }
+function calcularMultiplicacao(primeiroNumero, segundoNumero) {
+    return Number(primeiroNumero) * Number(segundoNumero)
+}
 
-    function calcularOperacaoMatematicaDivisao(primeiroNumero, segundoNumero) {
-        return Number(primeiroNumero) / Number(segundoNumero)
-    }
+function calcularDivisao(primeiroNumero, segundoNumero) {
+    return Number(primeiroNumero) / Number(segundoNumero)
+}
 
-
-    module.exports = {
-        calcularOperacaoMatematicaSoma,
-        calcularOperacaoMatematicaSubtracao,
-        calcularOperacaoMatematicaMultiplicacao,
-        calcularOperacaoMatematicaDivisao
+module.exports = {
+    calculaSoma,
+    calcularSubtracao,
+    calcularMultiplicacao,
+    calcularDivisao
 }
