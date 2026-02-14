@@ -1,7 +1,7 @@
 function tratarNumeroMatematico(primeiroNumero, segundoNumero, operacaoMatematica){
     let primeiro   = Number(primeiroNumero)
     let segundo    = Number(segundoNumero)
-    let operacao   = Number(operacaoMatematica)
+    let operacao   = operacaoMatematica
 
     if(primeiro == '' || segundo == '' || operacao == ''){
         return false

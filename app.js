@@ -5,6 +5,9 @@
 * Versão 1.0
 */
 
+let tratando = require('./Tratamento/tratandoNome.js')
+let calculos = require('./Modulo/calculosMatematico.js')
+
 const readline = require('readline')
 
 const entradaDados = readline.createInterface({
@@ -20,14 +23,20 @@ entradaDados.question('Insira o primeiro número: ', function(primeiro){
 
         entradaDados.question('Insira qual a operação matématica que deseja calcular: ', function(operacao){
             let operacaoMatematica = operacao
-            
-            let tratarNumeroMath = require('./Tratamento/tratandoNome.js')
-            let tratandoNumero = tratarNumeroMath.tratarNumeroMatematico(primeiroNumero, segundoNumero)
-       
-            let calcularOperacaoMatematica = require('./Modulo/calculosMatematico.js')
-            let calculandoOperacao = calcularOperacaoMatematica.calcularOperacaoMatematica(primeiroNumero, segundoNumero, operacaoMatematica)
-        
-            
+
+            if(operacaoMatematica == 'SOMA'){
+            console.log("A somatória dos dois números é: ", calculos.calcularOperacaoMatematicaSoma(primeiroNumero, segundoNumero))
+            }
+            else if(operacaoMatematica == 'SUBTRAÇÃO'){
+            console.log("A subtração dos dois números é: ", calculos.calcularOperacaoMatematicaSubtracao(primeiroNumero, segundoNumero))
+            }
+            else if(operacaoMatematica == 'MULTIPLICACAO'){
+                console.log("A multiplicação dos dois números é: ", calculos.calcularOperacaoMatematicaMultiplicacao(primeiroNumero, segundoNumero))
+            }
+            else if(operacaoMatematica == 'DIVISAO'){
+                console.log("A divisão dos dois números é: ", calculos.calcularOperacaoMatematicaDivisao(primeiroNumero, segundoNumero))
+            }
+
         })
     })
 })

@@ -1,24 +1,23 @@
-function calcularOperacaoMatematica (primeiroNumero, segundoNumero, operacaoMatematica){
-
-    let calcularPrimeiro   = Number(primeiroNumero)
-    let calcularSegundo    = Number(segundoNumero)
-    let calcularOperacao   = String(operacaoMatematica)
-
-    if(calcularOperacao == 'SOMA' ){
-        let calculoSoma = Number(calcularPrimeiro) + Number(calcularSegundo)
-        console.log('a SOMA é: ' + calculoSoma)
-    }else if(calcularOperacao == 'SUBTRACAO'){
-        let calculoSubtracao = Number(calcularPrimeiro) - Number(calcularSegundo)
-        console.log('a SUBTRACAO é: ' + calculoSubtracao)
-    }else if(calcularOperacao == 'MULTIPLICAÇÃO'){
-        let calculoMultiplicacao = Number(calcularPrimeiro) * Number(calcularSegundo)
-        console.log('a MULTIPLICAÇÃO é: ' + calculoMultiplicacao)
-    }else if(calcularOperacao == 'DIVISÃO'){
-        let calculoDivisao = Number(calcularPrimeiro) / Number(calcularSegundo)
-        console.log('a DIVISÃO é: ' + calculoDivisao)
+    function calcularOperacaoMatematicaSoma(primeiroNumero, segundoNumero) {
+        return Number(primeiroNumero) + Number(segundoNumero)
     }
-}
 
-module.exports = {
-    calcularOperacaoMatematica
+    function calcularOperacaoMatematicaSubtracao(primeiroNumero, segundoNumero) {
+        return Number(primeiroNumero) - Number(segundoNumero)
+    }
+
+    function calcularOperacaoMatematicaMultiplicacao(primeiroNumero, segundoNumero) {
+        return Number(primeiroNumero) * Number(segundoNumero)
+    }
+
+    function calcularOperacaoMatematicaDivisao(primeiroNumero, segundoNumero) {
+        return Number(primeiroNumero) / Number(segundoNumero)
+    }
+
+
+    module.exports = {
+        calcularOperacaoMatematicaSoma,
+        calcularOperacaoMatematicaSubtracao,
+        calcularOperacaoMatematicaMultiplicacao,
+        calcularOperacaoMatematicaDivisao
 }
