@@ -1,4 +1,4 @@
-# 📌 Calculadora com Validação e Modularização em Node.js
+# 📌 Calculadora com Validação e Modularização
 
 ---
 
