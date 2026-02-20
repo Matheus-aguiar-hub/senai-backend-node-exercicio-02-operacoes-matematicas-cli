@@ -25,7 +25,7 @@ entradaDados.question('Insira o primeiro número: ', function(primeiro){
            let operacaoMatematica = operacao.toUpperCase()
 
             if (!tratando.tratarNumero(primeiroNumero, segundoNumero, operacaoMatematica)) {
-            console.log("Erro: valores inválidos!")
+            console.log("Erro: informe os valores de forma válida (QUE TENHA NÚMEROS 10,10 ou 10.10) !")
             entradaDados.close()
             return
             }
@@ -46,7 +46,7 @@ entradaDados.question('Insira o primeiro número: ', function(primeiro){
                 console.log("A divisão dos dois números é: ", calculos.calcularDivisao(primeiroNumero, segundoNumero))
                     
                     if(!tratando.tratarDivisao(primeiroNumero, segundoNumero)){
-                    console.log("Erro: não é permitido divisão com zero.")
+                    console.log("Erro: não é permitido (DIVISÃO POR 0).")
                     entradaDados.close()
                     return
                 }
