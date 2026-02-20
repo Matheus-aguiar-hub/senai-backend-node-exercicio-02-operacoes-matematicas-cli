@@ -30,18 +30,21 @@ entradaDados.question('Insira o primeiro número: ', function(primeiro){
             return
             }
 
-            if(operacaoMatematica == 'SOMA'){
-            console.log("A somatória dos dois números é: ", calculos.calculaSoma(primeiroNumero, segundoNumero))
+            if(operacaoMatematica == 'SOMA' || operacaoMatematica == 'SOMAR'){
+            console.log("A somatória dos dois números é: ", calculos.calculaSoma(primeiroNumero, segundoNumero).toFixed(2))
+            entradaDados.close()
             }
-            else if(operacaoMatematica == 'SUBTRAÇÃO'){
-            console.log("A subtração dos dois números é: ", calculos.calcularSubtracao(primeiroNumero, segundoNumero))
+            else if(operacaoMatematica == 'SUBTRAÇÃO' || operacaoMatematica == 'SUBTRACÃO' || operacaoMatematica == 'SUBTRACAO'){
+            console.log("A subtração dos dois números é: ", calculos.calcularSubtracao(primeiroNumero, segundoNumero).toFixed(2))
+            entradaDados.close()
             }
-            else if(operacaoMatematica == 'MULTIPLICACAO'){
-                console.log("A multiplicação dos dois números é: ", calculos.calcularMultiplicacao(primeiroNumero, segundoNumero))
+            else if(operacaoMatematica == 'MULTIPLICAÇÃO' || operacaoMatematica == 'MULTIPLICACÃO' || operacaoMatematica == 'MULTIPLICACAO'){
+            console.log("A multiplicação dos dois números é: ", calculos.calcularMultiplicacao(primeiroNumero, segundoNumero).toFixed(2))
+            entradaDados.close()
             }
-            else if(operacaoMatematica == 'DIVISAO'){
+            else if(operacaoMatematica == 'DIVISÃO' || operacaoMatematica == 'DIVISÃO'  ){
                 console.log("A divisão dos dois números é: ", calculos.calcularDivisao(primeiroNumero, segundoNumero))
-
+                    
                     if(!tratando.tratarDivisao(primeiroNumero, segundoNumero)){
                     console.log("Erro: não é permitido divisão com zero.")
                     entradaDados.close()
