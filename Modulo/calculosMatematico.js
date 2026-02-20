@@ -1,3 +1,4 @@
+//Fazendo o desmembramento das funções de acordo com o calculo usado
 function calculaSoma(primeiroNumero, segundoNumero) {
     return Number(primeiroNumero) + Number(segundoNumero)
 }
